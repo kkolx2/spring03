@@ -5,7 +5,8 @@ import org.springframework.context.support.GenericXmlApplicationContext;
 public class DeptSpringExample {
 
 	public static void main(String[] args) {
-		GenericXmlApplicationContext ctx = new GenericXmlApplicationContext("classpath:/spring/beans.xml");
+		GenericXmlApplicationContext ctx = 
+				new GenericXmlApplicationContext("classpath:/spring/beans.xml");
 		// Bean 공장을 만든다.
 		
 		Dept dept = ctx.getBean(Dept.class);
