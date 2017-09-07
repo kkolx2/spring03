@@ -25,7 +25,7 @@
 				<executions>
 					<execution>
 						<id>scala-compile</id>
-						<phase>process-resources</phase>
+						<phase>compile</phase>
 						<goals>
 							<goal>add-source</goal>
 							<goal>compile</goal>
@@ -33,7 +33,7 @@
 					</execution>
 					<execution>
 						<id>scala-test-compile</id>
-						<phase>process-test-resources</phase>
+						<phase>test-compile</phase>
 						<goals>
 							<goal>testCompile</goal>
 						</goals>
